@@ -2,61 +2,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>AgroTech</title>
   <link rel="shortcut icon" href="img/icon.png" />
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 <body>
-  <script>
-    window.onload = function() {
-      setTimeout(function() {
-        document.getElementById('loader').style.display = 'none';
-        document.querySelector('.content').style.display = 'block';
-        document.body.style.filter= 'blur(0px)'
-        
-      }, 2000)
-    }
-
-    function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-} 
-  </script>
-<div style="position: relative;">
 <div class="loader" id="loader"><img src="img/Dowload.png" alt=""></div>
+<div class="content" id="content">
  <center><header>
     <div class="header">
         <ul class="nav">
              <li><div class="dropdown">
               <button onclick="myFunction()" class="dropbtn" id="dropbtn"></button>
               <div id="myDropdown" class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+                <a href="#">Описание</a>
+                <a href="#">Предприятия</a>
+                <a href="#">Чиназес</a>
               </div>
             </div></li>
-            <li class="log_in">Вход</li>
+            <a class="log_in" href="kekus">Вход</a>
         </ul>
     </div>
  </header>
  </center>
- <div class="content">бкбкбкббкбк</div>
+ <div class="nachinka">
+ </div>
 <center><footer>
-
+<center><div class="name">AgroTech</div></center>
 </footer></center>
 </div>
 </body>
